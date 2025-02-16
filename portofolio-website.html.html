@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rushikesh | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background-animation"></div>
+
+    <header>
+        <nav>
+            <h1>Portfolio</h1>
+            <div class="nav-center" style="display: flex; gap: 20px; align-items: center;">
+                <a href="https://github.com/Erushikesh" target="_blank">
+                    <img src="Github.png" alt="GitHub" width="100">
+                </a>
+                <a href="https://www.linkedin.com/in/rushikesh-eaga-a08182346/" target="_blank">
+                    <img src="Linkedin.png" alt="LinkedIn" width="100">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm Rushikesh</h2>
+            <p>Developer | Designer | Innovator</p>
+            <div class="hero-cta">
+                <a href="#about" class="cta-button">Explore My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Passionate about combining creativity and technical expertise to deliver high-quality results across all areas of IT</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Water Ejector App</h3>
+                <p>Developed using Flutter and Android Studio, this app helps remove water from phone speakers with precision sound frequencies.</p>
+            </div>
+            <!-- Video Embed Section -->
+            <div class="project-video">
+                <video controls width="100%">
+                    <source src="Flutter.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out!</p>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name" class="form-input">
+                <input type="email" placeholder="Your Email" class="form-input">
+                <textarea placeholder="Your Message" class="form-input"></textarea>
+                <button class="cta-button">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Rushikesh. All rights reserved.</p>
+    </footer>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
