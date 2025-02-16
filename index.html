@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <!-- Background Animation -->
     <div class="background-animation"></div>
 
     <header>
@@ -30,7 +29,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
             <h2>Hello, I'm Rushikesh</h2>
@@ -41,7 +39,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
@@ -49,7 +46,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
@@ -57,7 +53,6 @@
                 <h3>Water Ejector App</h3>
                 <p>Developed using Flutter and Android Studio, this app helps remove water from phone speakers with precision sound frequencies.</p>
             </div>
-            <!-- Video Embed Section -->
             <div class="project-video">
                 <video controls width="100%">
                     <source src="Flutter.mp4" type="video/mp4">
@@ -67,30 +62,27 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
             <p>Feel free to reach out!</p>
             <div class="contact-form">
-                <input type="text" placeholder="Your Name" class="form-input">
-                <input type="email" placeholder="Your Email" class="form-input">
-                <textarea placeholder="Your Message" class="form-input"></textarea>
-                <button class="cta-button">Send Message</button>
+                <form action="mailto:rushikesheaga@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="Name" placeholder="Your Name" class="form-input">
+                    <input type="email" name="Email" placeholder="Your Email" class="form-input">
+                    <textarea name="Message" placeholder="Your Message" class="form-input"></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Rushikesh. All rights reserved.</p>
     </footer>
 
-    <!-- GSAP Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-
-    <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
 </html>
