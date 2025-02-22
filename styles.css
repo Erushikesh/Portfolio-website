@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -10,7 +10,7 @@ body {
     position: relative;
 }
 
-/* Background Animation */
+
 .background-animation {
     position: fixed;
     top: 0;
@@ -29,7 +29,7 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Navigation Bar */
+
 header {
     position: fixed;
     top: 10px; 
@@ -81,10 +81,10 @@ nav ul li a:hover {
     opacity: 0.7;
 }
 
-/* Hero Section */
+
 #hero {
     position: relative;
-    z-index: 10; /* Above background */
+    z-index: 10; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,11 +128,11 @@ nav ul li a:hover {
     background: white;
     color: #1e3c72;
     transform: scale(1.1);
-    width: fit-content; /* Prevents it from stretching */
+    width: fit-content;
     padding: 10px 20px;
 }
 
-/* Sections */
+
 section {
     min-height: 100vh;
     display: flex;
@@ -169,7 +169,7 @@ p {
     max-width: 500px;
     margin: 0 auto;
 
-    align-items: center; /* Centers all form elements */
+    align-items: center; 
     gap: 15px;
 }
 
@@ -186,7 +186,7 @@ p {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Footer */
+
 footer {
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
@@ -201,7 +201,7 @@ footer {
     width: 100%;
     padding: 10px;
     border: 2px solid white;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px; 
     background: rgba(255, 255, 255, 0.1);
     color: white;
     font-size: 1rem;
@@ -211,5 +211,5 @@ footer {
 }
 
 .form-input:focus {
-    border-color: lightblue; /* Highlight effect when typing */
+    border-color: lightblue; 
 }
