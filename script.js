@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
 
-    // GSAP Scroll Animations
-    gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollTrigger);
 
     sections.forEach(section => {
         gsap.from(section, {
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-// Add this JavaScript
 document.addEventListener('scroll', () => {
     const background = document.querySelector('.background-animation');
     if (window.scrollY > 50) {
@@ -31,27 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
     sideElementsContainer.classList.add('side-elements');
     document.body.appendChild(sideElementsContainer);
 
-    // Create side elements
-    function createSideElement(side) {
+        function createSideElement(side) {
         const element = document.createElement('div');
         element.classList.add('side-element', side);
-        element.style.top = `${Math.random() * 100}vh`; // Random vertical position
-        element.style.animationDuration = `${Math.random() * 5 + 5}s`; // Random speed
-        element.style.opacity = Math.random() * 0.5 + 0.3; // Random opacity
-        sideElementsContainer.appendChild(element);
+        element.style.top = `${Math.random() * 100}vh`;         element.style.animationDuration = `${Math.random() * 5 + 5}s`;         element.style.opacity = Math.random() * 0.5 + 0.3;         sideElementsContainer.appendChild(element);
 
-        // Remove element after animation ends
-        setTimeout(() => {
+                setTimeout(() => {
             element.remove();
-        }, 15000); // Match animation duration
-    }
+        }, 15000);     }
 
-    // Generate elements continuously
-    setInterval(() => {
-        createSideElement('left'); // Left side element
-        createSideElement('right'); // Right side element
-    }, 2000); // Adjust density by changing interval
-});
+        setInterval(() => {
+        createSideElement('left');         createSideElement('right');     }, 2000); });
 document.addEventListener('mousemove', (e) => {
     const elements = document.querySelectorAll('.side-element');
     elements.forEach(element => {
@@ -65,23 +53,18 @@ document.addEventListener('DOMContentLoaded', () => {
     fallingElementsContainer.classList.add('falling-elements');
     document.body.appendChild(fallingElementsContainer);
 
-    // Create falling elements
-    function createFallingElement() {
+        function createFallingElement() {
         const element = document.createElement('div');
         element.classList.add('falling-element');
-        element.style.left = `${Math.random() * 100}vw`; // Random horizontal position
-        element.style.animationDuration = `${Math.random() * 5 + 10}s`; // Random speed (10-15s)
-        element.style.opacity = Math.random() * 0.5 + 0.3; // Random opacity
-        element.style.width = `${Math.random() * 10 + 5}px`; // Random size (5-15px)
-        element.style.height = element.style.width; // Keep it circular
-        fallingElementsContainer.appendChild(element);
+        element.style.left = `${Math.random() * 100}vw`;         element.style.animationDuration = `${Math.random() * 5 + 10}s`;         element.style.opacity = Math.random() * 0.5 + 0.3;         element.style.width = `${Math.random() * 10 + 5}px`;         element.style.height = element.style.width;         fallingElementsContainer.appendChild(element);
 
-        // Remove element after animation ends
-        setTimeout(() => {
+                setTimeout(() => {
             element.remove();
-        }, 15000); // Match animation duration
-    }
+        }, 15000);     }
 
-    // Generate elements continuously
-    setInterval(createFallingElement, 500); // Adjust density by changing interval
+        setInterval(createFallingElement, 500); });
+document.addEventListener('mousemove', (e) => {
+    const trailer = document.querySelector('.mouse-trailer');
+    trailer.style.left = `${e.clientX}px`;
+    trailer.style.top = `${e.clientY}px`;
 });
