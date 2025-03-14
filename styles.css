@@ -741,3 +741,42 @@ html, body {
         stroke-dashoffset: 0;
     }
 }
+
+.video-container {
+    position: relative;
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    padding: 4px; 
+    background: linear-gradient(45deg, #6dd5ed, #ff7e5f); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.video-container video {
+    display: block;
+    width: 100%; 
+    height: auto; 
+    border-radius: 16px; 
+}
+
+
+.video-container:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); 
+}
+
+
+@media (max-width: 768px) {
+    .video-container {
+        width: 95%; 
+        border-radius: 15px; 
+    }
+
+    .video-container video {
+        border-radius: 12px; 
+    }
+}
