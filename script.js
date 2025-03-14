@@ -68,3 +68,25 @@ document.addEventListener('mousemove', (e) => {
     trailer.style.left = `${e.clientX}px`;
     trailer.style.top = `${e.clientY}px`;
 });
+window.addEventListener('load', () => {
+    const loadingOverlay = document.querySelector('.loading-overlay');
+    if (loadingOverlay) {
+        loadingOverlay.style.opacity = '0';         setTimeout(() => {
+            loadingOverlay.remove();         }, 500);     }
+});
+let progress = 0;
+const progressBar = document.createElement('div');
+progressBar.classList.add('loading-progress');
+document.body.appendChild(progressBar);
+
+const interval = setInterval(() => {
+    progress += 10;
+    progressBar.style.width = `${progress}%`;
+    if (progress >= 100) {
+        clearInterval(interval);
+        progressBar.style.opacity = '0';
+        setTimeout(() => {
+            progressBar.remove();
+        }, 500);
+    }
+}, 200);
