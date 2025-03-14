@@ -750,7 +750,7 @@ html, body {
     border-radius: 20px; 
     overflow: hidden; 
     padding: 4px; 
-    background: linear-gradient(45deg, #6dd5ed, #ff7e5f); 
+    background: linear-gradient(45deg, #b36ded, #b36ded); 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
