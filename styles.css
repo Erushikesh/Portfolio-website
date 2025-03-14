@@ -1,4 +1,4 @@
-
+/* Base Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -9,7 +9,6 @@ body {
     overflow-x: hidden;
     position: relative;
 }
-
 
 .background-animation {
     position: fixed;
@@ -29,7 +28,7 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Navigation Bar */
+/* Navigation */
 header {
     position: fixed;
     top: 10px; 
@@ -44,7 +43,6 @@ header {
     border-radius: 15px;
     overflow: hidden;
 }
-
 
 nav {
     display: flex;
@@ -123,16 +121,13 @@ nav ul li a:hover {
     border-radius: 50px;
 }
 
-
 .cta-button:hover {
     background: white;
     color: #1e3c72;
     transform: scale(1.1);
-    width: fit-content;
-    padding: 10px 20px;
 }
 
-
+/* Sections */
 section {
     min-height: 100vh;
     display: flex;
@@ -162,54 +157,127 @@ p {
     margin-bottom: 40px;
 }
 
+/* Contact Form */
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
     max-width: 500px;
     margin: 0 auto;
-
-    align-items: center; /* Centers all form elements */
-    gap: 15px;
 }
 
 .form-input {
+    width: 100%;
     padding: 10px;
-    font-size: 1rem;
     border: 2px solid white;
+    border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
     color: white;
+    font-size: 1rem;
     outline: none;
+    transition: all 0.3s ease;
 }
 
-.form-input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+.form-input:focus {
+    border-color: lightblue;
 }
 
-
+/* Footer */
 footer {
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     position: relative;
-    bottom: 0;
     width: 100%;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.5px;
 }
-.form-input {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 10px; /* Rounded corners */
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 1rem;
-    outline: none;
-    margin-bottom: 10px;
-    transition: all 0.3s ease;
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        width: 95%;
+        top: 5px;
+        padding: 15px 0;
+    }
+
+    nav {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    nav h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .project {
+        padding: 0 20px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
 }
 
-.form-input:focus {
-    border-color: lightblue; /* Highlight effect when typing */
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 0 8px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
 }
