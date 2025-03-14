@@ -380,3 +380,33 @@ nav ul li a {
         height: calc(100vh - 70px);
     }
 }
+/* Prevent zooming on input focus */
+input, textarea, select, button {
+    font-size: 16px; /* Minimum font size to prevent zooming */
+}
+
+/* Prevent text size adjustment */
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/* Ensure proper scaling */
+body {
+    touch-action: manipulation; /* Disable double-tap zoom */
+    -webkit-tap-highlight-color: transparent;
+}
+/* Prevent horizontal scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ensure proper scaling of all elements */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
