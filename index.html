@@ -82,12 +82,103 @@
         </div>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Passionate about combining creativity and technical expertise to deliver high-quality results across all areas of IT.</p>
-        </div>
-    </section>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="about-content glass-box">
+      <img src="1736690137742.jpeg" alt="Profile Photo">
+      <div class="about-text">
+        <p>
+          🎓 Currently pursuing a <strong>Bachelor’s in Computer Science & Engineering at SRU</strong>, 
+          where technology meets creativity.
+        </p>
+        <p>
+          🎬 With a passion for <strong>professional video editing</strong>, I love transforming raw clips into cinematic experiences.  
+        </p>
+        <p>
+          ♟️ Away from the screen, I sharpen my mind through <strong>chess</strong>, embracing strategy and patience.  
+        </p>
+        <p>
+          💡 Driven by curiosity and innovation, I strive to blend design, code, and creativity into impactful digital experiences.  
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2e1b47, #4b0082); /* deep purple background */
+  }
+
+  #about {
+    padding: 60px 20px;
+  }
+
+  #about .container {
+    max-width: 950px;
+    margin: auto;
+  }
+
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  /* Glassmorphism Effect */
+  .glass-box {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .about-content img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    border: 3px solid rgba(255,255,255,0.5);
+  }
+
+  .about-text {
+    flex: 1;
+  }
+
+  .about-text p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    color: #f3e9ff;
+    font-weight: 400;
+  }
+
+  .about-text strong {
+    color: #fff;
+    font-weight: 600;
+  }
+</style>
+
 
     <section id="projects">
         <div class="container">
@@ -168,5 +259,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
