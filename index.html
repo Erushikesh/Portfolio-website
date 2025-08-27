@@ -53,24 +53,7 @@
     <div class="background-animation"></div>
     <div class="falling-elements"></div>
 
-    <header>
-        <nav>
-            <h1>Portfolio</h1>
-            <div class="nav-center" style="display: flex; gap: 20px; align-items: center;">
-                <a href="https://github.com/Erushikesh" target="_blank">
-                    <img src="Github.png" alt="GitHub" width="100">
-                </a>
-                <a href="https://www.linkedin.com/in/rushikesh-eaga-a08182346/" target="_blank">
-                    <img src="Linkedin.png" alt="LinkedIn" width="100">
-                </a>
-            </div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
 
     <section id="hero">
         <div class="hero-content">
@@ -80,7 +63,47 @@
                 <a href="#about" class="cta-button">Explore My Work</a>
             </div>
         </div>
+            <video autoplay muted loop playsinline id="hero-video">
+        <source src="Motion.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     </section>
+    <style>
+  #hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px; /* gives space for rounded effect */
+    box-sizing: border-box;
+  }
+
+  #hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px; /* rounded corners */
+
+    /* Glassmorphism frame */
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .hero-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+  }
+</style>
+    
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
@@ -91,17 +114,17 @@
       <img src="1736690137742.jpeg" alt="Profile Photo">
       <div class="about-text">
         <p>
-          🎓 Currently pursuing a <strong>Bachelor’s in Computer Science & Engineering at SRU</strong>, 
+           Currently pursuing a <strong>Bachelor’s in Computer Science & Engineering at SRU</strong>, 
           where technology meets creativity.
         </p>
         <p>
-          🎬 With a passion for <strong>professional video editing</strong>, I love transforming raw clips into cinematic experiences.  
+           With a passion for <strong>professional video editing</strong>, I love transforming raw clips into cinematic experiences.  
         </p>
         <p>
-          ♟️ Away from the screen, I sharpen my mind through <strong>chess</strong>, embracing strategy and patience.  
+           Away from the screen, I sharpen my mind through <strong>chess</strong>, embracing strategy and patience.  
         </p>
         <p>
-          💡 Driven by curiosity and innovation, I strive to blend design, code, and creativity into impactful digital experiences.  
+           Driven by curiosity and innovation, I strive to blend design, code, and creativity into impactful digital experiences.  
         </p>
       </div>
     </div>
